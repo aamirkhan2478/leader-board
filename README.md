@@ -35,7 +35,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/aamirkhan2478/todo-list/issues).
+Feel free to check the [issues page](https://github.com/aamirkhan2478/leader-board/issues).
 
 ## Show your support
 
