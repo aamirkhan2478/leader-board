@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve --mode production --open",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
     "test": "jest --watchAll --coverage"
   },
   "jest": {
