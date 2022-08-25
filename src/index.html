@@ -20,6 +20,8 @@
   </head>
   <body>
     <div class="container">
+      <div role="alert" id="success"></div>
+      <div role="alert" id="error"></div>
       <h1>Leaderboard</h1>
       <div class="row mt-5">
         <div class="col-sm-12 col-md-6">
@@ -34,7 +36,7 @@
                 <th>Score</th>
               </tr>
             </thead>
-            <tbody id="results">
+            <tbody id="results" class="table-group-divider">
               <tr>
                 <td colspan="2">Please press refresh button and see the scores</td>
               </tr>
@@ -43,7 +45,6 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <h2>Add Your Score</h2>
-          <h4 class="text-success text-center" id="msg"></h4>
           <form>
             <div class="mb-3">
               <label for="nameField" class="form-label">Name</label>
