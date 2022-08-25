@@ -1,19 +1,17 @@
-import { results } from "./getElements.js";
+import { results, baseUrl } from "./getElements.js";
 
 class DisplayScores {
   display = async () => {
     let loading = true;
-    loading
-      && (results.innerHTML = `
+    loading &&
+      (results.innerHTML = `
       <div class="d-flex align-items-center">
       <strong>Loading...</strong>
       <div class="spinner-border text-primary ms-auto" role="status" aria-hidden="true"></div>
     </div>
         `);
     try {
-      const data = await fetch(
-        "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RVLHmrTjFYooSfq9ZHuB/scores/",
-      );
+      const data = await fetch(baseUrl);
       const { result } = await data.json();
       let str = "";
       result.map((data) => {
