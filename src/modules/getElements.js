@@ -5,5 +5,4 @@ export const results = document.getElementById("results");
 export const refreshData = document.getElementById("refresh");
 export const error = document.getElementById("error");
 export const success = document.getElementById("success");
-export const baseUrl =
-  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RVLHmrTjFYooSfq9ZHuB/scores/";
+export const baseUrl = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nqUntV6SdYzFEBmHUeB1/scores/`;

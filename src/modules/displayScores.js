@@ -10,10 +10,12 @@ class DisplayScores {
       <div class="spinner-border text-primary ms-auto" role="status" aria-hidden="true"></div>
     </div>
         `);
+
     try {
       const data = await fetch(baseUrl);
       const { result } = await data.json();
       let str = "";
+
       result.map((data) => {
         str += `
             <tr>
@@ -23,6 +25,15 @@ class DisplayScores {
             `;
         return data;
       });
+
+      if (result.length === 0) {
+        str += `
+        <tr>
+            <td colspan="2" class="text-danger">Data not found</td>
+        </tr>
+        `;
+      }
+
       results.innerHTML = str;
       loading = false;
     } catch (error) {

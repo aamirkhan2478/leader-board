@@ -2,4 +2,10 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-image: url("./image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
