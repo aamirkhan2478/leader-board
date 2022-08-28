@@ -1,4 +1,10 @@
-import { error, success, nameField, scoreField,baseUrl } from "./getElements.js";
+import {
+  error,
+  success,
+  nameField,
+  scoreField,
+  baseUrl,
+} from "./getElements.js";
 
 class AddScore {
   addScore = async (e) => {
