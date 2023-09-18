@@ -19,7 +19,7 @@ class DisplayScores {
       result.map((data) => {
         str += `
             <tr>
-                <td>${data.user}</td>
+                <td>${data.user.slice(0, 30)}</td>
                 <td>${data.score}</td>
             </tr>
             `;
